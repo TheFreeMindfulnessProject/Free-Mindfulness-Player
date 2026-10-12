@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/audio/:id",
+      "destination": "https://drive.usercontent.google.com/download?id=:id&export=download"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

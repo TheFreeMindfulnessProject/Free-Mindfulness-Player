@@ -1,0 +1,6 @@
+{
+  "name": "Free Mindfulness Player",
+  "description": "A selection of free mindfulness meditation audios from The Free Mindfulness Project",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

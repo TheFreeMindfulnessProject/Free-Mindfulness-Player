@@ -149,8 +149,8 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       setIsLoading(false);
       setIsPlaying(false);
       // Try fallback if available and not already on fallback
-      if (currentTrack && !audio.src.includes(currentTrack.driveId)) {
-        console.log('Retrying with direct stream URL...');
+      if (currentTrack && audio.src !== currentTrack.fallbackStreamUrl) {
+        console.log('Retrying with fallback URL...');
         audio.src = currentTrack.fallbackStreamUrl;
         audio.play().catch((err) => {
           console.error('Fallback stream also failed:', err);

@@ -19,7 +19,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     description: 'A full guided body scan bringing warm, curious awareness systematically through the physical body.',
     filename: 'Body Scan Christina.mp3',
     streamUrl: `${R2_BASE_URL}/Body%20Scan%20Christina.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=16Nv5LMboMtCn5-V7bqf4heydE5qaQLfF',
+    fallbackStreamUrl: `${R2_BASE_URL}/Body%20Scan%20Christina.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/Body%20Scan%20Christina.mp3`,
     viewUrl: 'https://drive.google.com/file/d/16Nv5LMboMtCn5-V7bqf4heydE5qaQLfF/view?usp=sharing',
   },
@@ -39,7 +40,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 1 & 2',
     filename: 'BodyScan.mp3',
     streamUrl: `${R2_BASE_URL}/BodyScan.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1_MivdO2JmbP6rfwHk-dr4XHPLG_DiQR_',
+    fallbackStreamUrl: `${R2_BASE_URL}/BodyScan.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/BodyScan.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1_MivdO2JmbP6rfwHk-dr4XHPLG_DiQR_/view?usp=sharing',
   },
@@ -61,7 +63,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 3',
     filename: 'MindfulMovements.mp3',
     streamUrl: `${R2_BASE_URL}/MindfulMovements.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1UXPiWoxci1PuewvjNSCVcweqJcFrOlO4',
+    fallbackStreamUrl: `${R2_BASE_URL}/MindfulMovements.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/MindfulMovements.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1UXPiWoxci1PuewvjNSCVcweqJcFrOlO4/view?usp=sharing',
   },
@@ -81,7 +84,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 3',
     filename: 'StretchAndBreath.mp3',
     streamUrl: `${R2_BASE_URL}/StretchAndBreath.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1C5QwTjjwR6-pA2mBhVtZqFNipthtKiYM',
+    fallbackStreamUrl: `${R2_BASE_URL}/StretchAndBreath.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/StretchAndBreath.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1C5QwTjjwR6-pA2mBhVtZqFNipthtKiYM/view?usp=sharing',
   },
@@ -101,7 +105,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 3 & 4',
     filename: 'MindfulWalkingIntro.mp3',
     streamUrl: `${R2_BASE_URL}/MindfulWalkingIntro.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1HC-OLNemy22VYE_FkDocYFV1Ur6bNgy-',
+    fallbackStreamUrl: `${R2_BASE_URL}/MindfulWalkingIntro.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/MindfulWalkingIntro.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1HC-OLNemy22VYE_FkDocYFV1Ur6bNgy-/view?usp=sharing',
   },
@@ -121,7 +126,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 3 & 4',
     filename: 'MindfulWalking.mp3',
     streamUrl: `${R2_BASE_URL}/MindfulWalking.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1OQ9FoqXMG0BzjMWKXaYHK40x-2iwP7d0',
+    fallbackStreamUrl: `${R2_BASE_URL}/MindfulWalking.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/MindfulWalking.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1OQ9FoqXMG0BzjMWKXaYHK40x-2iwP7d0/view?usp=sharing',
   },
@@ -143,7 +149,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 4 & 5',
     filename: 'SittingMeditation.mp3',
     streamUrl: `${R2_BASE_URL}/SittingMeditation.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1l-u61lxZ1wcoGjH6YY9owntGVDJHCDlv',
+    fallbackStreamUrl: `${R2_BASE_URL}/SittingMeditation.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/SittingMeditation.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1l-u61lxZ1wcoGjH6YY9owntGVDJHCDlv/view?usp=sharing',
   },
@@ -163,7 +170,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 2 & 3',
     filename: '10MinuteBreathing.mp3',
     streamUrl: `${R2_BASE_URL}/10MinuteBreathing.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1oVh6GeYXF_XM_LCtcjB_k4Op5JrlxLad',
+    fallbackStreamUrl: `${R2_BASE_URL}/10MinuteBreathing.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/10MinuteBreathing.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1oVh6GeYXF_XM_LCtcjB_k4Op5JrlxLad/view?usp=sharing',
   },
@@ -183,7 +191,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 3 & 4',
     filename: '20MinuteBreathing.mp3',
     streamUrl: `${R2_BASE_URL}/20MinuteBreathing.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1aXPht5eHL8MpBY6GwKdMKKqnMGoR0OML',
+    fallbackStreamUrl: `${R2_BASE_URL}/20MinuteBreathing.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/20MinuteBreathing.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1aXPht5eHL8MpBY6GwKdMKKqnMGoR0OML/view?usp=sharing',
   },
@@ -203,7 +212,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 5',
     filename: 'WorkingWithDifficulty.mp3',
     streamUrl: `${R2_BASE_URL}/WorkingWithDifficulty.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1mEPNvIOML4qTjdYCySAEh8wd_rPzkIkj',
+    fallbackStreamUrl: `${R2_BASE_URL}/WorkingWithDifficulty.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/WorkingWithDifficulty.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1mEPNvIOML4qTjdYCySAEh8wd_rPzkIkj/view?usp=sharing',
   },
@@ -225,7 +235,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 4 onwards',
     filename: 'Three Step Breathing Space Christina.mp3',
     streamUrl: `${R2_BASE_URL}/Three%20Step%20Breathing%20Space%20Christina.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1tYoYlm7zPNqA10rAZjB7gtCDS72MqTBd',
+    fallbackStreamUrl: `${R2_BASE_URL}/Three%20Step%20Breathing%20Space%20Christina.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/Three%20Step%20Breathing%20Space%20Christina.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1tYoYlm7zPNqA10rAZjB7gtCDS72MqTBd/view?usp=sharing',
   },
@@ -245,7 +256,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 4 onwards',
     filename: '3MinuteBreathingSpace.mp3',
     streamUrl: `${R2_BASE_URL}/3MinuteBreathingSpace.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1_tGvlNv-tBDlHf0A4FBksR1-bVP6tgNm',
+    fallbackStreamUrl: `${R2_BASE_URL}/3MinuteBreathingSpace.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/3MinuteBreathingSpace.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1_tGvlNv-tBDlHf0A4FBksR1-bVP6tgNm/view?usp=sharing',
   },
@@ -265,7 +277,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 5 onwards',
     filename: '3SBS Responding Christina.mp3',
     streamUrl: `${R2_BASE_URL}/3SBS%20Responding%20Christina.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=18dZIV7CsN-G63Jnk6_tl3N1wUhoLWn47',
+    fallbackStreamUrl: `${R2_BASE_URL}/3SBS%20Responding%20Christina.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/3SBS%20Responding%20Christina.mp3`,
     viewUrl: 'https://drive.google.com/file/d/18dZIV7CsN-G63Jnk6_tl3N1wUhoLWn47/view?usp=sharing',
   },
@@ -285,7 +298,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 5 onwards',
     filename: '3MinuteBreathingSpaceResponsive.mp3',
     streamUrl: `${R2_BASE_URL}/3MinuteBreathingSpaceResponsive.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1O-jqitNReVIg08Seb70w8Zl6UrbKcjZ0',
+    fallbackStreamUrl: `${R2_BASE_URL}/3MinuteBreathingSpaceResponsive.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/3MinuteBreathingSpaceResponsive.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1O-jqitNReVIg08Seb70w8Zl6UrbKcjZ0/view?usp=sharing',
   },
@@ -305,7 +319,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Anytime / Acute calm',
     filename: 'Five finger breathing.mp3',
     streamUrl: `${R2_BASE_URL}/Five%20finger%20breathing.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=14e43ErMi4PaMi0zO6ZrXhdxOh1ivSX7M',
+    fallbackStreamUrl: `${R2_BASE_URL}/Five%20finger%20breathing.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/Five%20finger%20breathing.mp3`,
     viewUrl: 'https://drive.google.com/file/d/14e43ErMi4PaMi0zO6ZrXhdxOh1ivSX7M/view?usp=sharing',
   },
@@ -327,7 +342,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Week 6 to 8',
     filename: '40MJustBells.mp3',
     streamUrl: `${R2_BASE_URL}/40MJustBells.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1yU81lNrDe1XeUJS2dji2hv7DFhkVtbEG',
+    fallbackStreamUrl: `${R2_BASE_URL}/40MJustBells.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/40MJustBells.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1yU81lNrDe1XeUJS2dji2hv7DFhkVtbEG/view?usp=sharing',
   },
@@ -347,7 +363,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Daily pause',
     filename: '5MinJustBells.mp3',
     streamUrl: `${R2_BASE_URL}/5MinJustBells.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1tbF-0KtWWBxLJkHe06ol8ueFW_QNNm5Q',
+    fallbackStreamUrl: `${R2_BASE_URL}/5MinJustBells.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/5MinJustBells.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1tbF-0KtWWBxLJkHe06ol8ueFW_QNNm5Q/view?usp=sharing',
   },
@@ -369,7 +386,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Brief Practice',
     filename: '10MinBodyScan.mp3',
     streamUrl: `${R2_BASE_URL}/10MinBodyScan.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1LJM5i6VboUe2Dhu4V_XIEGfPAdkrg0oq',
+    fallbackStreamUrl: `${R2_BASE_URL}/10MinBodyScan.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/10MinBodyScan.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1LJM5i6VboUe2Dhu4V_XIEGfPAdkrg0oq/view?usp=sharing',
   },
@@ -389,7 +407,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Brief Practice',
     filename: 'BreathAndSounds.mp3',
     streamUrl: `${R2_BASE_URL}/BreathAndSounds.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=120ktNchtGkrQSNVwL3Mc5ciiHUMcojks',
+    fallbackStreamUrl: `${R2_BASE_URL}/BreathAndSounds.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/BreathAndSounds.mp3`,
     viewUrl: 'https://drive.google.com/file/d/120ktNchtGkrQSNVwL3Mc5ciiHUMcojks/view?usp=sharing',
   },
@@ -409,7 +428,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Brief Practice',
     filename: 'SoundsAndThoughts.mp3',
     streamUrl: `${R2_BASE_URL}/SoundsAndThoughts.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1iK7nFjRxi15UcI3reAjzm5CbEAeS9LEM',
+    fallbackStreamUrl: `${R2_BASE_URL}/SoundsAndThoughts.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/SoundsAndThoughts.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1iK7nFjRxi15UcI3reAjzm5CbEAeS9LEM/view?usp=sharing',
   },
@@ -429,7 +449,8 @@ export const MEDITATIONS: MeditationTrack[] = [
     recommendedWeek: 'Brief Practice',
     filename: 'BreathShort.mp3',
     streamUrl: `${R2_BASE_URL}/BreathShort.mp3`,
-    fallbackStreamUrl: 'https://drive.google.com/uc?export=download&id=1GmET-l7OHuoNVaCmrcBWxQncyyNrAXq-',
+    fallbackStreamUrl: `${R2_BASE_URL}/BreathShort.mp3`,
+    
     downloadUrl: `${R2_BASE_URL}/BreathShort.mp3`,
     viewUrl: 'https://drive.google.com/file/d/1GmET-l7OHuoNVaCmrcBWxQncyyNrAXq-/view?usp=sharing',
   },

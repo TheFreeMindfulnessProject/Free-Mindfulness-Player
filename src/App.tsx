@@ -254,8 +254,14 @@ function MeditationAppContent() {
             />
           </div>
 
-          <p className="text-xs sm:text-sm text-[#4E5E53] dark:text-[#A7B6AB] max-w-md mx-auto font-medium leading-relaxed">
-            A selection of free mindfulness meditation audios from The Free Mindfulness Project
+          <p className="text-xs sm:text-sm text-[#4E5E53] dark:text-[#A7B6AB] max-w-lg mx-auto font-medium leading-relaxed">
+            We hope this app supports your practice. Feedback or comments are welcome:{' '}
+            <a
+              href="mailto:app@freemindfulness.org"
+              className="text-[#385944] dark:text-[#7EA089] underline hover:opacity-85 font-semibold"
+            >
+              app@freemindfulness.org
+            </a>
           </p>
 
           <div className="flex items-center justify-center gap-3 text-xs">

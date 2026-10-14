@@ -9,11 +9,10 @@ import {
   SkipForward,
   Heart,
   Download,
-  ArrowDownToLine,
+  CheckCircle2,
   Moon,
   Loader2,
   ExternalLink,
-  Bell,
 } from 'lucide-react';
 import { useAudio } from '../context/AudioContext';
 import { playMindfulBell } from '../utils/bellSound';
@@ -348,43 +347,29 @@ export const FullPlayerModal: React.FC = () => {
                   ? 'text-[#385944] dark:text-[#7EA089] hover:bg-black/[0.04] dark:hover:bg-white/[0.06]'
                   : 'text-[#45544A] dark:text-[#B5C2B8] hover:bg-black/[0.04] dark:hover:bg-white/[0.06]'
               }`}
-              title={downloaded ? 'Saved offline' : 'Save for offline'}
+              title={downloaded ? 'Saved offline (tap to remove)' : 'Save for offline'}
             >
               {progressPercent !== undefined ? (
                 <span className="text-[10px] font-mono tabular-nums text-[#385944]">
                   {progressPercent}%
                 </span>
               ) : downloaded ? (
-                <div className="relative">
-                  <Download className="w-4 h-4 text-[#385944] dark:text-[#7EA089]" />
-                  <span className="absolute -top-1 -right-1 w-1.5 h-1.5 rounded-full bg-[#385944] dark:bg-[#7EA089]" />
-                </div>
+                <CheckCircle2 className="w-5 h-5 text-[#385944] dark:text-[#7EA089]" />
               ) : (
-                <Download className="w-4 h-4" />
+                <Download className="w-5 h-5" />
               )}
             </button>
-
-            {/* Direct MP3 file save */}
-            <a
-              href={currentTrack.downloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Download MP3 file"
-              className="p-2.5 rounded-full text-[#45544A] dark:text-[#B5C2B8] hover:text-[#1E2621] dark:hover:text-white hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors"
-            >
-              <ArrowDownToLine className="w-4 h-4" />
-            </a>
           </div>
 
-          {/* Clean link */}
+          {/* Clean link to original audio source page */}
           <div className="text-center pt-1">
             <a
-              href="https://www.freemindfulness.org/lthtr"
+              href="https://www.freemindfulness.org/download"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs text-[#7A8C80] dark:text-[#889B8E] hover:text-[#385944] dark:hover:text-[#A7C5B0] hover:underline transition-colors font-medium"
             >
-              <span>A selection of free mindfulness meditation audios from The Free Mindfulness Project</span>
+              <span>The Free Mindfulness Project</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>

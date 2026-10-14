@@ -1,5 +1,4 @@
-import React from 'react';
-import { Play, Pause, Heart, Check, Download, ArrowDownToLine, Loader2 } from 'lucide-react';
+import { Play, Pause, Heart, Check, Download, CheckCircle2, Loader2 } from 'lucide-react';
 import { MeditationTrack } from '../types';
 import { useAudio } from '../context/AudioContext';
 
@@ -140,10 +139,10 @@ export const TrackCard: React.FC<TrackCardProps> = ({ track }) => {
                 <Heart className={`w-3.5 h-3.5 ${favorited ? 'fill-rose-500 text-rose-500' : ''}`} />
               </button>
 
-              {/* Download for Offline */}
+              {/* Save for Offline */}
               <button
                 onClick={handleOfflineToggle}
-                aria-label={downloaded ? 'Remove offline copy' : 'Save for offline'}
+                aria-label={downloaded ? 'Saved offline (tap to remove)' : 'Save for offline'}
                 title={downloaded ? 'Saved offline (tap to remove)' : 'Save for offline'}
                 disabled={progressPercent !== undefined}
                 className={`p-1.5 sm:p-2 rounded-full transition-colors ${
@@ -157,27 +156,11 @@ export const TrackCard: React.FC<TrackCardProps> = ({ track }) => {
                     {progressPercent}%
                   </span>
                 ) : downloaded ? (
-                  <div className="relative">
-                    <Download className="w-3.5 h-3.5 text-[#385944] dark:text-[#7EA089]" />
-                    <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-[#385944] dark:bg-[#7EA089]" />
-                  </div>
+                  <CheckCircle2 className="w-4 h-4 text-[#385944] dark:text-[#7EA089]" />
                 ) : (
-                  <Download className="w-3.5 h-3.5" />
+                  <Download className="w-4 h-4" />
                 )}
               </button>
-
-              {/* Direct MP3 file save */}
-              <a
-                href={track.downloadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                title="Download MP3 file"
-                aria-label={`Save MP3 file for ${track.title}`}
-                className="p-1.5 sm:p-2 rounded-full text-[#6E7F73] dark:text-[#90A295] hover:text-[#1E2621] dark:hover:text-white hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors"
-              >
-                <ArrowDownToLine className="w-3.5 h-3.5" />
-              </a>
             </div>
           </div>
         </div>

@@ -62,12 +62,18 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
         {/* Content */}
         <div className="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6 text-sm text-[#46544C] dark:text-[#A6B4AA] leading-relaxed">
           {/* Mission statement */}
-          <div>
-            <p className="font-semibold text-[#1E2621] dark:text-[#EDF3EF] mb-1.5">
-              A selection of free mindfulness meditation audios from The Free Mindfulness Project.
+          <div className="space-y-2">
+            <p className="font-semibold text-[#1E2621] dark:text-[#EDF3EF]">
+              A new free mindfulness meditation app created as part of The Free Mindfulness Project.
             </p>
-            <p className="text-xs text-[#5B6D60] dark:text-[#98A99D]">
-              Created to provide a calm, clean, zero-distraction space for anyone wanting to easily access, play, or save mindfulness practices.
+            <p className="text-xs text-[#5B6D60] dark:text-[#98A99D] leading-relaxed">
+              We recognise the need for simple and free ways to access mindfulness meditations without ads or distractions. We hope that this app supports your practice. Feedback or comments are very welcome, contact us using{' '}
+              <a
+                href="mailto:app@freemindfulness.org"
+                className="text-[#385944] dark:text-[#7EA089] underline hover:opacity-85 font-semibold"
+              >
+                app@freemindfulness.org
+              </a>
             </p>
           </div>
 
@@ -167,14 +173,23 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          {/* Zero Cost and Privacy */}
+          {/* Cost and Privacy */}
           <div className="p-4 rounded-2xl bg-white dark:bg-[#1A211D] border border-stone-200/80 dark:border-white/[0.06] space-y-2">
             <div className="flex items-center gap-2 text-[#385944] dark:text-[#7EA089] font-bold text-xs">
               <Leaf className="w-4 h-4" />
-              <span>Zero-Cost &amp; Privacy Guarantee</span>
+              <span>Cost and Privacy</span>
             </div>
-            <p className="text-xs text-[#5B6D60] dark:text-[#98A99D]">
-              This player operates with zero subscriptions, zero ads, and zero user telemetry. Practices can be cached in your device browser for full offline listening on walks, flights, or hospital wards without an internet connection.
+            <p className="text-xs text-[#5B6D60] dark:text-[#98A99D] leading-relaxed">
+              This app operates with no fee, no subscription or adds, and no collection of user data. Practices can be cached to your device for full offline listening. If you would like to contribute to The Free Mindfulness Project visit:{' '}
+              <a
+                href="https://www.freemindfulness.org/donate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#385944] dark:text-[#7EA089] underline hover:opacity-85 font-semibold inline-flex items-center gap-0.5"
+              >
+                <span>freemindfulness.org/donate</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
             </p>
           </div>
 
@@ -190,13 +205,13 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
               <span>freemindfulness.org</span>
             </a>
             <a
-              href="https://www.freemindfulness.org/lthtr"
+              href="https://www.freemindfulness.org/download"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs text-[#385944] dark:text-[#7EA089] hover:underline font-semibold"
             >
               <ExternalLink className="w-4 h-4" />
-              <span>Original audio source page</span>
+              <span>freemindfulness.org/download</span>
             </a>
           </div>
         </div>

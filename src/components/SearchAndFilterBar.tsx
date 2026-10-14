@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, X, Heart, Download, SlidersHorizontal } from 'lucide-react';
 import { CATEGORIES } from '../data/meditations';
 import { SectionCategory, DurationFilter, VoiceFilter } from '../types';
@@ -38,6 +38,17 @@ export const SearchAndFilterBar: React.FC<SearchAndFilterBarProps> = ({
 }) => {
   const [showFilters, setShowFilters] = useState(false);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(typeof window !== 'undefined' && window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const hasActiveAdvanced = selectedDuration !== 'all' || selectedVoice !== 'all';
 
   return (
@@ -50,7 +61,7 @@ export const SearchAndFilterBar: React.FC<SearchAndFilterBarProps> = ({
             type="text"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Search meditations (e.g. breath, body scan, bells)..."
+            placeholder={isMobile ? 'Search...' : 'Search meditations (e.g. breath, body scan)...'}
             className="w-full pl-11 pr-10 py-3 rounded-2xl bg-white dark:bg-[#1A211D] border border-stone-200/80 dark:border-white/[0.08] text-sm text-[#1E2621] dark:text-[#E8EFEA] placeholder:text-[#88988D] focus:outline-none focus:ring-2 focus:ring-[#385944]/30 dark:focus:ring-[#6F9B7E]/30 transition-all shadow-xs"
           />
           {searchQuery && (

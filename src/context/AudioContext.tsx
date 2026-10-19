@@ -2,6 +2,12 @@ import React, { createContext, useContext, useEffect, useRef, useState } from 'r
 import { MeditationTrack } from '../types';
 import { cacheTrackAudio, getCachedAudioBlobUrl, isTrackCached, removeTrackFromCache } from '../utils/offlineCache';
 import { MEDITATIONS } from '../data/meditations';
+import {
+  trackPlayMeditation,
+  trackCompleteMeditation,
+  trackOfflineSave,
+  trackFavoriteToggle,
+} from '../utils/analytics';
 
 interface AudioContextType {
   currentTrack: MeditationTrack | null;
@@ -141,6 +147,7 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         setCompletedTracks((prev) =>
           prev.includes(currentTrack.id) ? prev : [...prev, currentTrack.id]
         );
+        trackCompleteMeditation(currentTrack);
       }
     };
     const onError = () => {
@@ -296,6 +303,7 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }
       await audio.play();
       setIsPlaying(true);
+      trackPlayMeditation(track);
     } catch (err) {
       console.warn('Playback initiation failed:', err);
       // Try fallback URL directly
@@ -371,9 +379,14 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const toggleFavorite = (trackId: string) => {
+    const track = MEDITATIONS.find((t) => t.id === trackId);
+    const willBeFav = !favorites.includes(trackId);
     setFavorites((prev) =>
       prev.includes(trackId) ? prev.filter((id) => id !== trackId) : [...prev, trackId]
     );
+    if (track) {
+      trackFavoriteToggle(track, willBeFav);
+    }
   };
 
   const isFavorite = (trackId: string) => favorites.includes(trackId);
@@ -393,6 +406,7 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         setDownloadProgress((prev) => ({ ...prev, [track.id]: percent }));
       });
       setCachedTrackIds((prev) => (prev.includes(track.id) ? prev : [...prev, track.id]));
+      trackOfflineSave(track);
       setDownloadProgress((prev) => {
         const next = { ...prev };
         delete next[track.id];
